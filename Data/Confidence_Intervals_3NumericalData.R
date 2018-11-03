@@ -1,24 +1,31 @@
 #Confidence Interval for Spent
 mean_Spent <- mean(ren$Spent)
+mean_Spent
 sd_Spent <- sd(ren$Spent)
+sd_Spent
 qnorm(.975)
-zerror <- qnorm(.975)*(sd_Spent/sqrt(15))
-mean_Spent - zerror
-mean_Spent + zerror
+zerror_Spent <- qnorm(.975)*(sd_Spent/sqrt(30))
+mean_Spent - zerror_Spent
+mean_Spent + zerror_Spent
 
-#Confidence Interval for Amount Spent on Garbage
-mean_Garbage <- mean(ren$Garbage)
-sd_Garbage <- sd(ren$Garbage)
+
+#Confidence Interval for Invoices
+mean_Invoice <- mean(ren$Invoice)
+mean_Invoice
+sd_Invoice <- sd(ren$Invoice)
+sd_Invoice
 qnorm(.975)
-zerror_Garbage <-qnorm(.975)*(sd_Garbage/sqrt(15))
-mean_Garbage - zerror_Garbage
-mean_Garbage + zerror_Garbage
+zerror_Invoice <- qnorm(.975)*(sd_Invoice/sqrt(30))
+mean_Invoice - zerror_Invoice
+mean_Invoice + zerror_Invoice
 
-#Confidence Interval for Number of Days Spent on a Project
-mean_Days <- mean(ren$Days)
-sd_Days <- sd(ren$Days)
+
+#Confidence Interval for Labor Costs
+mean_LC <- mean(ren$LC)
+mean_LC
+sd_LC <- sd(ren$LC)
+sd_LC
 qnorm(.975)
-zerror_Days <-qnorm(.975)*(sd_Days/sqrt(15))
-mean_Days - zerror_Days
-mean_Days + zerror_Days
-
+zerror_LC <- qnorm(.975)*(sd_LC/sqrt(30))
+mean_LC - zerror_LC
+mean_LC + zerror_LC

@@ -22,8 +22,10 @@ mean(only_Manhattan_df$Spent)
 qnorm(.975)
 
 #Hypothesis 3
-only_OneDay_df <- subset(ren, Days == "1")
-only_TwoDays_df <- subset(ren, Days == "2")
+only_OneTwoDays_df <- subset(ren, Days <= 2)
 only_MoreDays_df <- subset(ren, Days >= 3)
-(sum(only_OneDay_df$LC)+sum(only_TwoDays_df$LC))/19
+mean(only_OneTwoDays_df$LC)
+(sum(only_MoreDays_df$LC)-15500)/10
+
+
 

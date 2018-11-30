@@ -1,7 +1,7 @@
 data_minus1 <- ren
 withoutLargestOutlier <- data_minus1[-c(30),]
 withoutLargestOutlier
-withoutLargestOutlier.lm <- lm(Profit~Invoice, data = withoutLargestOutlier)
+withoutLargestOutlier.lm <- lm(Invoice~Total.Costs, data = withoutLargestOutlier)
 coef(withoutLargestOutlier.lm)
-plot(Profit~Invoice, data = withoutLargestOutlier, main ="Ren's Profit")
+plot(Invoice~Total.Costs, data = withoutLargestOutlier, main ="Ren's Next Invoice")
 abline(coef(withoutLargestOutlier.lm))

@@ -34,3 +34,17 @@ sample_Garbage <- ren$Garbage
 subset_6 <- sample_Garbage[1:29]
 skewness(subset_6) #Does not include largest outlier 
 
+#Checking for skewness in Total Costs
+skewness(ren$Total.Costs) #Includes largest outlier
+sample_TotalCosts <- ren$Total.Costs
+subset_7 <- sample_TotalCosts[1:29]
+skewness(subset_7) #Does not include largest outlier 
+
+#Checking for skewness in Profit
+skewness(ren$Profit) #Includes largest outlier
+sample_Profit <- ren$Profit
+subset_8 <- sample_Profit[1:29]
+skewness(subset_8) #Does not include largest outlier
+
+#Checking for skewness in Percentage Gained
+skewness(ren$X.Gain)

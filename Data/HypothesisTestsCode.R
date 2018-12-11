@@ -1,6 +1,6 @@
 #Hypothesis test 1
-sum(subset_1)
-sum(subset_1)+ sum(subset_3)+ sum(subset_6)
+sum(ren$Spent)-7450.38
+sum(ren$Total.Costs)- 24800.38
 qnorm(.975)
 6379.57 / 19816.02
 
@@ -27,5 +27,8 @@ only_MoreDays_df <- subset(ren, Days >= 3)
 mean(only_OneTwoDays_df$LC)
 (sum(only_MoreDays_df$LC)-15500)/10
 
-
-
+#Hypothesis 4
+sum(ren$LC)- 15500
+sum(ren$Total.Costs)- 24800.38
+qnorm(.975)
+15500 / 24800.38

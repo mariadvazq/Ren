@@ -77,3 +77,42 @@ qnorm(.975)
 zerror_Garbage <- qnorm(.975)*(sd_Garbage/sqrt(29))
 mean_Garbage - zerror_Garbage
 mean_Garbage + zerror_Garbage
+
+#Condifence Interval for Total Costs
+sample_TotalCosts <- ren$Total.Costs
+subset_7 <- sample_TotalCosts[1:29]
+subset_7
+mean_TotalCosts <- mean(subset_7)
+mean_TotalCosts
+sd_TotalCosts <- sd(subset_7)
+sd_TotalCosts
+qnorm(.975)
+zerror_TotalCosts <- qnorm(.975)*(sd_TotalCosts/sqrt(29))
+mean_TotalCosts - zerror_TotalCosts
+mean_TotalCosts + zerror_TotalCosts
+
+#Condifence Interval for Profit
+sample_Profit <- ren$Profit
+subset_8 <- sample_Profit[1:29]
+subset_8
+mean_Profit <- mean(subset_8)
+mean_Profit
+sd_Profit <- sd(subset_8)
+sd_Profit
+qnorm(.975)
+zerror_Profit <- qnorm(.975)*(sd_Profit/sqrt(29))
+mean_Profit - zerror_Profit
+mean_Profit + zerror_Profit
+
+#Condifence Interval for X.Gain (gain percentage)
+sample_Gain <- ren$X.Gain
+subset_9 <- sample_Gain[1:29]
+subset_9
+mean_Gain <- mean(subset_9)
+mean_Gain
+sd_Gain <- sd(subset_9)
+sd_Gain
+qnorm(.975)
+zerror_Gain <- qnorm(.975)*(sd_Gain/sqrt(29))
+mean_Gain - zerror_Gain
+mean_Gain + zerror_Gain

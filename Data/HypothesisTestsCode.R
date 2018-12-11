@@ -21,13 +21,13 @@ mean(only_Manhattan_df$Spent)
 (807.19 + 324.98)/8
 qnorm(.975)
 
-#Hypothesis 3
+#Hypothesis test 3
 only_OneTwoDays_df <- subset(ren, Days <= 2)
 only_MoreDays_df <- subset(ren, Days >= 3)
 mean(only_OneTwoDays_df$LC)
 (sum(only_MoreDays_df$LC)-15500)/10
 
-#Hypothesis 4
+#Hypothesis test 4
 sum(ren$LC)- 15500
 sum(ren$Total.Costs)- 24800.38
 qnorm(.975)

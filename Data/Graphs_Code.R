@@ -22,6 +22,26 @@ sample_LC <- ren$LC
 subset_3 <- sample_LC[1:29]
 hist(subset_3, breaks = 20, main= "Amount Spent on Labor Per Project", xlab= "Total Amount", col = rainbow(50))
 
+#Histogram for Total Costs (with largest outlier)
+hist(ren$Total.Costs, breaks = 100, main = "Ren's Total Costs", xlab= "Total Amount", col= rainbow(50))
+
+#Histogram for Total Costs (without largest outlier)
+sample_TotalCosts <- ren$Total.Costs
+subset_7 <- sample_TotalCosts[1:29]
+hist(subset_7, breaks = 20, main = "Ren's Total Costs", xlab= "Total Amount", col= rainbow(50))
+
+#Histogram for Profit (with largest outlier)
+hist(ren$Profit, breaks = 100, main = "Ren Made a Profit", xlab= "Amount Made", col= rainbow(50))
+
+#Histogram for Profit (without largest outlier)
+sample_Profit <- ren$Profit
+subset_8 <- sample_Profit[1:29]
+hist(subset_8, breaks = 20, main = "Ren Made a Profit", xlab= "Amount Made", col= rainbow(50))
+
+#Histogram for Percentage Gained
+hist(ren$X.Gain, breaks = 30, main = "Percentage Gained by Ren", xlab= "Percentage", col= rainbow(50))
+
+
 #Strpchart for No. Items
 stripchart(ren$No.Items, method = "stack", main = "No. Items Bought Per Project", xlab = "No. Items")
 

@@ -41,7 +41,6 @@ hist(subset_8, breaks = 20, main = "Ren Made a Profit", xlab= "Amount Made", col
 #Histogram for Percentage Gained
 hist(ren$X.Gain, breaks = 30, main = "Percentage Gained by Ren", xlab= "Percentage", col= rainbow(50))
 
-
 #Strpchart for No. Items
 stripchart(ren$No.Items, method = "stack", main = "No. Items Bought Per Project", xlab = "No. Items")
 

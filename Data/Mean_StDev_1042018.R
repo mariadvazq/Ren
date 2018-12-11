@@ -17,7 +17,18 @@ sd(ren$Days)
 mean(ren$Garbage)
 sd(ren$Garbage)
 
+mean(ren$Total.Costs)
+sd(ren$Total.Costs)
+
+mean(ren$Profit)
+sd(ren$Profit)
+
+mean(ren$X.Gain)
+sd(ren$X.Gain)
+
+
 #Mean and Standard Deviation excluding the largest outlier
+sample_Spent <- ren$Spent
 subset_1 <- sample_Spent[1:29]
 subset_1
 mean(subset_1)
@@ -52,3 +63,22 @@ subset_6 <- sample_Garbage[1:29]
 subset_6
 mean(subset_6)
 sd(subset_6)
+
+sample_TotalCosts <- ren$Total.Costs
+subset_7 <- sample_TotalCosts[1:29]
+subset_7
+mean(subset_7)
+sd(subset_7)
+
+sample_Profit <- ren$Profit
+subset_8 <- sample_Profit[1:29]
+subset_8
+mean(subset_8)
+sd(subset_8)
+
+sample_Gain <- ren$X.Gain
+subset_9 <- sample_Gain[1:29]
+subset_9
+mean(subset_9)
+sd(subset_9)
+
